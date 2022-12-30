@@ -1,0 +1,130 @@
+ul#ranginesmssystem {
+    float: right;
+}
+#showmobilenumbers {
+	padding: 9px;
+	display: inline-block;
+	color: #fff !important;
+	text-decoration: none !important;
+	cursor: pointer;
+	background: #282b30;
+	border-radius: 15px;
+}
+#ranginesmssystem > li {
+	float: right;
+	position: relative;
+	display: block;
+}
+.mobile-wrapper {
+
+    display: inline-block;
+    background: #deeeff;
+    position: relative;
+
+}
+#ranginesmssystem .mobile-alternative {
+	cursor: pointer;
+	text-align :center;
+}
+
+.mobile-wrapper .mobile-alternative {
+	position: absolute;
+	width: 137%;
+	top: -6px;
+	left: -4px;
+	padding: 5px 23px 3px 0;
+	background: #efefef;
+	opacity: 0;
+	transition: 0.2s;
+	cursor: pointer;
+	box-shadow: 0 0 3px;
+	border-radius: 5px;
+}
+.mobile-wrapper:hover .mobile-alternative {
+	opacity: 1;
+}
+.mobile-wrapper .icon-mobile {
+	position: absolute;
+	right: 0;
+	background: #838383;
+	height: 100%;
+	top: 0;
+	width: 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20pt;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+}
+#makenumbersclickable.disable {
+	color: #aaa;
+	cursor: default;
+	background: #fff;
+}
+#ranginesmssystem .lowcreditalert {
+    background: #ffe5e5;
+    text-align: center;
+    display: block;
+    padding: 2px;
+}
+#ranginesmssystem .notifs_badge {
+    padding: 1px 5px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: inherit;
+    letter-spacing: 0.0625em;
+    background-color: #00aff0;
+    display: inline-block;
+    min-width: 16px;
+    color: #fff;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 2px;
+    z-index: 10;
+    right: -4px;
+}
+.dropdownrangine {
+    position: relative;
+}
+.dropdownrangine-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    right: 50%;
+    top: 0;
+}
+.dropdownrangine-content li {
+  width: 100%;
+  list-style : none;
+}
+.dropdownrangine-content a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownrangine-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdownrangine:hover .dropdownrangine-content {
+  display: block;
+}
+.dropdownrangine .dropdownranginebtn { 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}

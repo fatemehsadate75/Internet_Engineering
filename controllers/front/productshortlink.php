@@ -1,0 +1,2 @@
+<?php
+ class ranginesmsprestaProductshortlinkModuleFrontController extends ModuleFrontController { public function init(){ parent::init(); $id_product = Tools::getValue('product_id'); $link = new Link(); $context = Context::getContext(); $id_shop = $context->shop->id; $id_lang = $context->language->id; $product = new Product((int) $id_product, false, $id_lang, $id_shop); $product_link = $link->getProductLink($product, $product->link_rewrite); Tools::redirect($product_link); } }

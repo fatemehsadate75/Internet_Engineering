@@ -1,0 +1,2 @@
+<?php
+ if (!defined('_PS_VERSION_')) exit; function upgrade_module_2_3_8($object) { Configuration::updateValue('RANGINE_SMS_ADMININVOICE', ''); $sql = 'ALTER TABLE `' . _DB_PREFIX_ . 'ranginesmspresta` CHANGE COLUMN `order` `id_order`  int(10) NULL DEFAULT NULL AFTER `customer`;'; @Db::getInstance()->execute($sql); return true; } 
